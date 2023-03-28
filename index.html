@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <title>My Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="heading">Book Library</h1>
+    </div>
+    <div class="main">
+        <div class="left-main">
+            <h1 class="menu-heading">Menu</h1>
+            <div class="new-addition">
+                <form action="post" class="new-addition-form" name="form">
+                    <div class="form-element">
+                        <label for="book" class="left-text">Book</label>
+                        <input type="text" id="title" class="left-input" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="author" class="left-text">Author</label>
+                        <input type="text" id="author" class="left-input" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="num-pages" class="left-text"># of Pages</label>
+                        <input type="number" id="num_pages" class="left-input" required>
+                    </div>
+                    <div class="form-element radio-element">
+                        <div class="form-radio">
+                            <input type="radio" name="have-read-book" id="have-read" value='true' class="left-text">
+                            <label for="have-read" class="left-input-radio">Read</label>
+                        </div>    
+                        <div class="form-radio">
+                            <input type="radio" name="have-read-book" id="have-not-read" checked value='false' class="left-text">
+                            <label for="have-not-read" class="left-input-radio">Not Read</label>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <button class="submit-btn" type="submit">Add</button>
+                    </div>               
+                </form>
+            </div>
+        </div>
+        <div class="right-main">
+            <div id="card-container" class="card-container">
+            
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>Copyright &copy;Dewald Fourie 2023</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
