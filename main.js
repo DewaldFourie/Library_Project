@@ -10,11 +10,13 @@ let myLibrary = [];
 
 
 // Book Constructor 
-function Book(title, author, num_pages, have_read){
-    this.title = title;
-    this.author = author;
-    this.num_pages = num_pages;
-    this.have_read = have_read;
+class Book {
+    constructor (title, author, num_pages, have_read){
+        this.title = title;
+        this.author = author;
+        this.num_pages = num_pages;
+        this.have_read = have_read;
+    }
 }
 
 
