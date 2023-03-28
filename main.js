@@ -9,7 +9,7 @@ library project with javascript and html, adding books to a library array and cr
 let myLibrary = [];
 
 
-// Book Constructor 
+// Book Constructor made with a new class
 class Book {
     constructor (title, author, num_pages, have_read){
         this.title = title;
